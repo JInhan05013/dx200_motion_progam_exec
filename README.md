@@ -52,3 +52,44 @@ Install the package by `python setup.py install`.
 
 ## Motosim
 Refer to [Motosim Manual](Motosim.md).
+
+
+## Robot Calibration (On Teach Pandant)
+### Check robot calibration data from teach pandant
+* Click [ROBOT] on left menu, and select [ROBOT CALIB]
+
+![](images/robotcalibration01.jpg)
+
+* Click [DISPLAY] and select [COORDINATE DATA]
+
+![](images/robotcalibration02.jpg)
+
+![](images/robotcalibration03.jpg)
+
+* The data shown on the screen will be robot calibrated configuration:
+
+![](images/robotcalibration04.jpg)
+
+### Robot calibration
+* Use [select] on teach pandant and select the robot group to calibrate:
+
+![](images/robotcalibration05.jpg)
+
+![](images/robotcalibration06.jpg)
+
+* Use `5 points rule` for calibration:
+Point the TCP of robot#1 to a reference point on robot#2, and keep them pointing each other for all 5 points:
+
+![](images/robotcalibration09.jpg)
+
+![](images/robotcalibration07.jpg)
+
+Jog C1, C2, C3 with fixing 2nd axis of robot#2.
+Jog C3, C4, C5 with fixing 1st axis of robot#2.
+Use [MODIFY] + [ENTER] to adjust C1 - C5.
+
+![](images/robotcalibration08.jpg)
+
+Click [COMPLETE] to finish robot calibration, if errors happen, follow the error instruction to re-adjust C1 - C5.
+
+![](images/robotcalibration10.jpg)
